@@ -1,5 +1,14 @@
 # game.py
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+x = os.getenv("PLAYER_NAME")
+print("Welcome", x, "to my Rock-Paper-Scissors game...")
+
+
 import random
 
 print("Rock, Paper, Scissors, Shoot!")
@@ -13,6 +22,7 @@ if user_choice not in ["rock", "paper", "scissors"]:
     print("Sorry, invalid input. Please try again.")
     exit()
 
+print("You chose:")
 print(user_choice)
 
 # computer choice (at random)
