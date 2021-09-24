@@ -37,23 +37,18 @@ print("-------------------")
 
 if user_choice == computer_choice:
     print("It's a tie!")
-
-if user_choice == "rock" and computer_choice == "scissors":
+elif user_choice == "rock" and computer_choice == "scissors":
     print("Congrats! You won!")
-if user_choice == "rock" and computer_choice == "paper":
+elif user_choice == "rock" and computer_choice == "paper":
     print("Oh, the computer won. It's ok.")
-
-
-if user_choice == "paper" and computer_choice == "scissors":
+elif user_choice == "paper" and computer_choice == "scissors":
     print("Oh, the computer won. It's ok.")
-if user_choice == "paper" and computer_choice == "rock":
+elif user_choice == "paper" and computer_choice == "rock":
     print("Congrats! You won!")
-
-
-if user_choice == "scissors" and computer_choice == "rock":
+elif user_choice == "scissors" and computer_choice == "rock":
     print("Oh, the computer won. It's ok.")
-if user_choice == "scissors" and computer_choice == "paper":
-    print("Congrats! You won!")
+elif user_choice == "scissors" and computer_choice == "paper":
+        print("Congrats! You won!")
 
 print("-------------------")
 print("Thanks for playing. Please play again!")
