@@ -21,7 +21,7 @@ print("Rock, Paper, Scissors, Shoot!")
 user_choice = input("Choose 'rock' or 'paper' or 'scissors': ")
 
 if user_choice not in ["rock", "paper", "scissors"]:
-    print("Sorry, invalid input. Please try again.")
+    print("Sorry, invalid input. Please try again. (Hint: no need to capitalize!)")
     exit()
 
 print("You chose:", user_choice)
