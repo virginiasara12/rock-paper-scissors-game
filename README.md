@@ -19,7 +19,7 @@ Use Anaconda to create and activate a new virtual environment, perhaps called "m
 
 ```sh
 conda create -n my-game-env python=3.8
-conda activate my-first-env
+conda activate my-game-env
 ```
 
 After activating the virtual environment, install package dependencies (see the ["requirements.txt"](/requirements.txt) file):
@@ -33,7 +33,9 @@ pip install -r requirements.txt
 ## Setup
 
 In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username (then make sure to SAVE the ".env" file afterwards):
-    PLAYER_NAME = "Player One"
+    
+        PLAYER_NAME = "Player One"
+
 > NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means we need to instruct each person who uses our code needs to create their own local ".env" file.
 
 ## Usage
@@ -43,6 +45,7 @@ Run the python script:
 ```py
 python game.py
 
-# alternative module-style invocation (only required if importing from one file to another): python -m game.py
+# alternative module-style invocation (only required if importing from one file to another):
+python -m game.py
 ```
 > NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment.
