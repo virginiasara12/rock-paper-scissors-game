@@ -1,5 +1,7 @@
 # rock-paper-scissors-game
 
+A python rock-paper-scissors-game where students can play against the computer!
+
 ## Prerequisites
     + Anaconda 3.7+
     + Python 3.7+
